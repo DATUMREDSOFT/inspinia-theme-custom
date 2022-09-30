@@ -215,7 +215,12 @@ $(document).ready(function(){
 		if (window.location.host === "desa.virtualafpconfia.com"){
 			//Desarrollo
 			window.location.href = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://desa.virtualafpconfia.com/web/afiliado/redirect.html?logout=https://desa.virtualafpconfia.com/web/confiavirtual';
-		} else if (window.location.host === "virtualafpconfia.com"){
+		} 
+		else if (window.location.host === "desaemp.virtualafpconfia.com") {
+            //Desarrollo
+            window.location.href = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://desa.virtualafpconfia.com/web/empleador/redirect.html?logout=https://desa.virtualafpconfia.com/web/confiavirtual';
+        }
+		else if (window.location.host === "virtualafpconfia.com"){
 			//Producción
 			window.location.href = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://virtualafpconfia.com/web/afiliado/redirect.html?logout=https://virtualafpconfia.com/web/confiavirtual';
 		} else if (window.location.host === "uat.virtualafpconfia.com"){
