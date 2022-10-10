@@ -218,7 +218,7 @@ $(document).ready(function(){
 		} 
 		else if (window.location.host === "desaemp.virtualafpconfia.com") {
             //Desarrollo
-            window.location.href = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://desa.virtualafpconfia.com/web/empleador/redirect.html?logout=https://desa.virtualafpconfia.com/web/confiavirtual';
+            window.location.href = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://desaemp.virtualafpconfia.com/web/empleador/redirect.html?logout=https://desaemp.virtualafpconfia.com/web/confiavirtual';
         }
 		else if (window.location.host === "virtualafpconfia.com"){
 			//Producción
@@ -230,7 +230,11 @@ $(document).ready(function(){
 		 else if (window.location.host === "uatconfia.com") {
 			//UAT
 			window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://uatconfia.com/web/afiliado/redirect.html?logout=https://uatconfia.com/web/confiavirtual';
-    	}
+    	} 
+		else if (window.location.host === "uatemp.virtualafpconfia.com"){
+			//UAT
+			window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://uatemp.virtualafpconfia.com/web/empleador/redirect.html?logout=https://uatemp.virtualafpconfia.com/web/confiavirtual';
+		}
 	}
 	
 	function setupTimers () {
