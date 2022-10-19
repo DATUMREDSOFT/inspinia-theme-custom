@@ -158,7 +158,7 @@
             url_token = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
             client_id_app = '491c1251-413f-46ae-81d3-a7a3fb772d75';
             client_secret_app = '4p2l_2gy-9vAwXV8._P-kmLUqT6ce3cQll';
-        } else if (window.location.host === "uat.virtualafpconfia.com" || window.location.host === "uatconfia.com" || (window.location.host === "uatemp.virtualafpconfia.com") {
+        } else if (window.location.host === "uat.virtualafpconfia.com" || window.location.host === "uatconfia.com" || window.location.host === "uatemp.virtualafpconfia.com") {
 			url_token = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
 			client_id_app = '6705a6cd-97de-423e-ba86-084cbd91a300';
 			client_secret_app = 'sOByHG-q5otu-2iFiZ2Q.k4JRy0-_o1B~G';
