@@ -153,7 +153,7 @@
         let client_id_app = '';
         let client_secret_app = '';
         let current_page = window.location;
-        console.log('********** Refrescamiento del token **********');
+        //console.log('********** Refrescamiento del token **********');
         if (window.location.host === "desa.virtualafpconfia.com" || window.location.host === "desaemp.virtualafpconfia.com") {
             url_token = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
             client_id_app = '491c1251-413f-46ae-81d3-a7a3fb772d75';
@@ -186,12 +186,12 @@
                 timeout: 0,
                 data: formdata,
                 success: function (data) {
-                    console.log(data)
+                  //  console.log(data)
                     localStorage.setItem("token", data.access_token)
                 }
 
             }).fail(function () {
-                console.log('No fue posible refrescar el token');
+                console.warn('No fue posible refrescar el token');
             });
         return datos
     }
