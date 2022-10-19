@@ -273,7 +273,7 @@
 
     function changePassword() {
 
-        sesionStorage.setValue('cambiarClave', 1);
+        sessionStorage.setItem('cambiarClave', 1);
 
         if (window.location.host === "desa.virtualafpconfia.com") {
             //Desarrollo
