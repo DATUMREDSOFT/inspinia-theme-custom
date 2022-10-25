@@ -212,6 +212,14 @@ $(document).ready(function(){
 		sessionStorage.clear();
     	localStorage.clear();
 
+		 if (window.location.href.includes('/web/empleador')) {
+            localStorage.setItem('sitio', window.location.origin + '/web/empleador');
+        }
+        else {
+            localStorage.setItem('sitio', window.location.origin + '/web/afiliado');
+        }
+
+
 		if (window.location.host === "desa.virtualafpconfia.com"){
 			//Desarrollo
 			window.location.href = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://desa.virtualafpconfia.com/web/afiliado/redirect.html?logout=https://desa.virtualafpconfia.com/web/confiavirtual';
