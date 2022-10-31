@@ -158,11 +158,16 @@
             url_token = 'https://confiadesasso.b2clogin.com/confiadesasso.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
             client_id_app = '491c1251-413f-46ae-81d3-a7a3fb772d75';
             client_secret_app = '4p2l_2gy-9vAwXV8._P-kmLUqT6ce3cQll';
-        } else if (window.location.host === "uat.virtualafpconfia.com" || window.location.host === "uatconfia.com" || window.location.host === "uatemp.virtualafpconfia.com") {
+        } else if (window.location.host === "uat.virtualafpconfia.com" || window.location.host === "uatconfia.com" || window.location.host === "emp.uatconfia.com" || window.location.host === "uatemp.virtualafpconfia.com") {
 			url_token = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
 			client_id_app = '6705a6cd-97de-423e-ba86-084cbd91a300';
 			client_secret_app = 'sOByHG-q5otu-2iFiZ2Q.k4JRy0-_o1B~G';
 		} else if (window.location.host === "virtualafpconfia.com") {
+            url_token = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
+            client_id_app = '303e64dc-5692-4920-b316-a4e4ed076097';
+            client_secret_app = 'qG~JYXRQTZ5R.LJ3.6j93BV39Y-_s-5tog';
+        }
+        else if (window.location.host === "emp.virtualafpconfia.com") {
             url_token = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1a_username_login';
             client_id_app = '303e64dc-5692-4920-b316-a4e4ed076097';
             client_secret_app = 'qG~JYXRQTZ5R.LJ3.6j93BV39Y-_s-5tog';
@@ -266,13 +271,22 @@
         }else if (window.location.host === "virtualafpconfia.com") {
             //Producción
             window.location.href = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://virtualafpconfia.com/web/afiliado/redirect.html?logout=https://virtualafpconfia.com/web/confiavirtual';
-        } else if (window.location.host === "uat.virtualafpconfia.com") {
+        } 
+        else if (window.location.host === "emp.virtualafpconfia.com") {
+            //Producción
+            window.location.href = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://emp.virtualafpconfia.com/web/empleador/redirect.html?logout=https://emp.virtualafpconfia.com/web/confiavirtual';
+        }
+        else if (window.location.host === "uat.virtualafpconfia.com") {
             //UAT
             window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://uat.virtualafpconfia.com/web/afiliado/redirect.html?logout=https://uat.virtualafpconfia.com/web/confiavirtual';
         }
         else if (window.location.host === "uatconfia.com") {
             //UAT
             window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://uatconfia.com/web/afiliado/redirect.html?logout=https://uatconfia.com/web/confiavirtual';
+        }
+        else if (window.location.host === "emp.uatconfia.com") {
+            //UAT
+            window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/b2c_1a_username_login/oauth2/v2.0/logout?post_logout_redirect_uri=https://emp.uatconfia.com/web/empleador/redirect.html?logout=https://emp.uatconfia.com/web/confiavirtual';
         }
         else if (window.location.host === "uatemp.virtualafpconfia.com") {
             //UAT
@@ -298,6 +312,9 @@
          else if (window.location.host === "virtualafpconfia.com") {
             //Producción
             window.location.href = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_PasswordReset_UserName_SMSMail&client_id=303e64dc-5692-4920-b316-a4e4ed076097&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fvirtualafpconfia.com%2Fweb%2Fafiliado&scope=openid&response_type=code&prompt=login';
+        }else if (window.location.host === "emp.virtualafpconfia.com") {
+            //Producción
+            window.location.href = 'https://confiaregistro.b2clogin.com/confiaregistro.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_PasswordReset_UserName_SMSMail&client_id=303e64dc-5692-4920-b316-a4e4ed076097&nonce=defaultNonce&redirect_uri=https%3A%2F%2Femp.virtualafpconfia.com%2Fweb%2Fempleador&scope=openid&response_type=code&prompt=login';
         } else if (window.location.host === "uat.virtualafpconfia.com") {
             //UAT
             window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_PasswordReset_UserName_SMSMail&client_id=6705a6cd-97de-423e-ba86-084cbd91a300&nonce=-ACmdkdUmgmUHTNgD7euAuq26esBVvppchdQyZ-wNRk&redirect_uri=https%3A%2F%2Fuat.virtualafpconfia.com%2Fweb%2Fafiliado%2Fredirect.html&scope=profile%20openid%20offline_access%20https://confiaregistrouat.onmicrosoft.com/6705a6cd-97de-423e-ba86-084cbd91a300/Files.Read&response_type=code%20id_token';
@@ -309,6 +326,10 @@
         else if (window.location.host === "uatconfia.com") {
             //UAT
             window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_PasswordReset_UserName_SMSMail&client_id=6705a6cd-97de-423e-ba86-084cbd91a300&nonce=-ACmdkdUmgmUHTNgD7euAuq26esBVvppchdQyZ-wNRk&redirect_uri=https%3A%2F%2Fuat.virtualafpconfia.com%2Fweb%2Fafiliado%2Fredirect.html&scope=profile%20openid%20offline_access%20https://confiaregistrouat.onmicrosoft.com/6705a6cd-97de-423e-ba86-084cbd91a300/Files.Read&response_type=code%20id_token';
+        }
+        else if (window.location.host === "emp.uatconfia.com") {
+            //UAT
+            window.location.href = 'https://confiaregistrouat.b2clogin.com/confiaregistrouat.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_PasswordReset_UserName_SMSMail&client_id=6705a6cd-97de-423e-ba86-084cbd91a300&nonce=-ACmdkdUmgmUHTNgD7euAuq26esBVvppchdQyZ-wNRk&redirect_uri=https%3A%2F%2Fuat.virtualafpconfia.com%2Fweb%2Fempleador%2Fredirect.html&scope=profile%20openid%20offline_access%20https://confiaregistrouat.onmicrosoft.com/6705a6cd-97de-423e-ba86-084cbd91a300/Files.Read&response_type=code%20id_token';
         }
     }
 
