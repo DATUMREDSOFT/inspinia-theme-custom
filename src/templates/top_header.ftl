@@ -414,6 +414,18 @@
             "contacto_selectTipoDoc",
             "contacto_telefono_update",
             "contacto_tipo",
+            'datoEnvio', 
+            'validacionLongitud', 
+            'descripcion', 'tipoCuenta',
+            'resActuaizaFormulario', 
+            'banco', 
+            'dataAfiliado', 
+            'codigoSms', 
+            'anticipo', 'porcetaje', 'validaciones', 'urlDocumento', 'selectAgencia', 
+            'base64resolucionAnticipo', 'flujos', 'statusRetiro', 'porcentaje', 'montoRetiro', 
+            'moresFirmaDocumentontoRetiro', 'resActuaizaAnticipo', 'base64SolicitudAnticipo', 
+            'dataAnticipo', 'resFirmaDocumento', 'base64resolucionAnticipo', 'tipoCuentaBanco', 
+            'numero_verificacion', 'numeroCuenta', 'bancoLocal'
         ];
         items.map((item) => {
             if (localStorage.hasOwnProperty(item)) {
