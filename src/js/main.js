@@ -15,7 +15,7 @@ if (window.location.host === "desa.virtualafpconfia.com" || window.location.host
 } else if (window.location.host === "virtualafpconfia.com" || window.location.host === "emp.virtualafpconfia.com"){
   //Producción
   apiPrefix = 'https://api.virtualafpconfia.com';
-} else if (window.location.host === "uat.virtualafpconfia.com"  || window.location.host === "uatconfia.com"){
+} else if (window.location.host === "uat.virtualafpconfia.com"  || window.location.host === "uatconfia.com" || window.location.host === "uatemp.virtualafpconfia.com"  || window.location.host === "emp.uatconfia.com"){
   //Producción
   apiPrefix = 'https://apiuat.virtualafpconfia.com';
 }
