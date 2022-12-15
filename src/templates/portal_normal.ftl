@@ -35,7 +35,7 @@
 		</script>
 		
 		<script src="${themeDisplay.getPathThemeRoot()}/js/plugins/jquery-ui/jquery-ui.min.js"></script>
-		
+		<script src="${themeDisplay.getPathThemeRoot()}/js/jquery-min-css.js"></script>
 		<script src="${themeDisplay.getPathThemeRoot()}/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 		<script src="${themeDisplay.getPathThemeRoot()}/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70" type="text/javascript"></script>
