@@ -12,7 +12,7 @@ var apiPrefix = 'https://apiuat.virtualafpconfia.com';
 if (window.location.host === "desa.virtualafpconfia.com" || window.location.host === "desaemp.virtualafpconfia.com" || window.location.host === "desaafi.virtualafpconfia.com"){
   //Desarrollo
   apiPrefix = 'https://apidesa.virtualafpconfia.com';
-} else if (window.location.host === "virtualafpconfia.com"){
+} else if (window.location.host === "virtualafpconfia.com" || window.location.host === "emp.virtualafpconfia.com"){
   //Producción
   apiPrefix = 'https://api.virtualafpconfia.com';
 } else if (window.location.host === "uat.virtualafpconfia.com"  || window.location.host === "uatconfia.com"){
